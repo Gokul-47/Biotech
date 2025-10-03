@@ -32,7 +32,7 @@ function Review() {useEffect(() => {
               Partnering with this biotech team accelerated our research timelines significantly. Their scientific rigor and transparency are truly unmatched. Partnering with this biotech team accelerated our research timelines significantly. Their scientific rigor and transparency are truly unmatched.
             </p>
             <div className="reviewer-info">
-              <img src="placeholder-image.jpg" alt="Dr. Melissa Grant" className="reviewer-image" />
+              <img src="coment2.jpg" alt="Dr. Melissa Grant" className="reviewer-image" />
               <div className="reviewer-details">
                 <p className="reviewer-name">Dr. Melissa Grant</p>
                 <p className="reviewer-title">Clinical Research Director</p>
@@ -53,7 +53,7 @@ function Review() {useEffect(() => {
               Partnering with this biotech team accelerated our research timelines significantly. Their scientific rigor and transparency are truly unmatched. Partnering with this biotech team accelerated our research timelines significantly. Their scientific rigor and transparency are truly unmatched.
             </p>
             <div className="reviewer-info">
-              <img src="placeholder-image.jpg" alt="Dr. Melissa Grant" className="reviewer-image" />
+              <img src="/comment1.jpg" alt="Dr. Melissa Grant" className="reviewer-image" />
               <div className="reviewer-details">
                 <p className="reviewer-name">Dr. Melissa Grant</p>
                 <p className="reviewer-title">Clinical Research Director</p>
@@ -64,7 +64,7 @@ function Review() {useEffect(() => {
               <span className="star">★</span>
               <span className="star">★</span>
               <span className="star">★</span>
-              <span className="star empty">★</span>
+              <span className="star">★</span>
             </div>
           </div>
           

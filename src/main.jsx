@@ -5,6 +5,8 @@ import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
 import Review  from './Review.jsx'
+import Contact from './Contact.jsx'
+import Cliens from './cliens.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -13,5 +15,7 @@ createRoot(document.getElementById('root')).render(
     <Home/>
     <About/>
     <Review/>
+    <Cliens/>
+    <Contact/>
   </StrictMode>,
 )
