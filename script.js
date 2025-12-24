@@ -238,7 +238,70 @@ document.addEventListener("DOMContentLoaded", () => {
   initPipelineTabs();
   routeButtonsTo404();
   setYear();
+  initFooterMap();
 });
+
+/* Footer mini-map: toggle and initialize Leaflet map lazily */
+function initFooterMap() {
+  const showBtn = document.getElementById('show-map-btn');
+  const mini = document.getElementById('mini-map');
+  const closeBtn = document.getElementById('close-map');
+  const mapEl = document.getElementById('leaflet-map');
+  if (!showBtn || !mini || !mapEl) return;
+
+  let mapInitialized = false;
+  let mapInstance = null;
+
+  // Coordinates for Bengaluru center; adjust if you have a precise location
+  const lat = 12.9716;
+  const lon = 77.5946;
+
+  const openMap = () => {
+    mini.classList.remove('hidden');
+    mini.setAttribute('aria-hidden', 'false');
+    showBtn.setAttribute('aria-expanded', 'true');
+
+    if (!mapInitialized) {
+      try {
+        mapInstance = L.map(mapEl).setView([lat, lon], 15);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mapInstance);
+
+        L.marker([lat, lon]).addTo(mapInstance);
+        mapInitialized = true;
+      } catch (e) {
+        console.warn('Leaflet not available', e);
+      }
+    } else {
+      mapInstance.invalidateSize();
+    }
+  };
+
+  const closeMap = () => {
+    mini.classList.add('hidden');
+    mini.setAttribute('aria-hidden', 'true');
+    showBtn.setAttribute('aria-expanded', 'false');
+  };
+
+  showBtn.addEventListener('click', () => {
+    const isOpen = !mini.classList.contains('hidden');
+    if (isOpen) {
+      closeMap();
+    } else {
+      openMap();
+    }
+  });
+
+  closeBtn?.addEventListener('click', closeMap);
+
+  // Close if clicking outside the popup
+  document.addEventListener('click', (e) => {
+    if (!mini.contains(e.target) && e.target !== showBtn && !showBtn.contains(e.target)) {
+      closeMap();
+    }
+  });
+}
 
 
 

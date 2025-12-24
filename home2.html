@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stackly biotechnology</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Leaflet CSS for mini maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   </head>
   <body data-page="home2">
     <header class="site-header">
@@ -338,17 +340,24 @@
           </ul>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-column contact-map">
           <h4>Contact</h4>
           <p class="footer-contact-line">
-            <strong>Email:</strong> clinical@btnexus.bio
+            <strong>Email:</strong> stackly@gmail.com
           </p>
           <p class="footer-contact-line">
-            <strong>Phone:</strong> +1 (555) 045‑9900
+            <strong>Phone:</strong> +91 1234567890
           </p>
           <p class="footer-contact-line">
-            <strong>Address:</strong> 400 Quantum Helix Way, BioCity
+            <strong>Address:</strong>
+            <button id="show-map-btn" class="footer-text-link" aria-expanded="false">Evolve hub , Bengaluru, Karnataka, India</button>
           </p>
+
+          <div id="mini-map" class="map-popup hidden" aria-hidden="true">
+            <button id="close-map" class="map-close" aria-label="Close map">×</button>
+            <div id="leaflet-map" style="width:100%; height:170px; border-radius:10px;"></div>
+            <a href="https://www.google.com/maps/search/?api=1&query=12.9716,77.5946" target="_blank" rel="noopener" class="text-link map-open-link">Open in Google Maps</a>
+          </div>
         </div>
 
         <div class="footer-column">
