@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly Biotechnology</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand">
+          <div class="logo-orbit">
+           <img src="assets/logoimg.webp">
+           
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">Stackly Biotechnology</span>
+            <span class="brand-tagline">Where biology meets algorithms</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+
+        <nav class="main-nav">
+          <ul>
+            <li class="nav-dropdown">
+              <button class="nav-link nav-link-dropdown">
+                Home
+                <span class="chevron"></span>
+              </button>
+              <ul class="dropdown-menu">
+                
+                <li><a href="home2.html" class="dropdown-item">Home2 – Clinical Grid</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html" class="nav-link">About Us</a></li>
+            <li><a href="404.html" class="nav-link">Services</a></li>
+            <li><a href="404.html" class="nav-link">Blog</a></li>
+            <li><a href="404.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="404.html" class="btn ghost-btn">Dashboard</a>
+          <a href="404.html" class="btn primary-btn">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Loader overlay (added) -->
+    <div id="page-loader" class="loader-overlay" aria-hidden="true">
+      <div class="loader-content">
+        <div class="spinner"></div>
+        <p class="loader-text">Loading...</p>
+      </div>
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+      <section class="section hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal-up">
+            <p class="eyebrow">Next‑Gen BioTechnology Cloud</p>
+            <h1>
+              Orchestrate living systems<br />
+              with <span class="accent-gradient">computational precision</span>.
+            </h1>
+            <p class="hero-subtitle">
+              From genome analytics to AI‑driven drug discovery, Stackly Biotechnology
+              connects your lab instruments, biological data, and simulations into one
+              intelligent platform.
+            </p>
+            <div class="hero-actions">
+              <a href="404.html" class="btn primary-btn">Launch Virtual Lab</a>
+              <a href="#platform" class="btn text-btn">Explore platform ↓</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <span class="metric-value" data-count="98">0</span>
+                <span class="metric-label">Pipeline automation success</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value" data-count="12">0</span>
+                <span class="metric-label">Countries with active deployments</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value" data-count="4">0</span>
+                <span class="metric-label">Weeks from sample to insight</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-up delay-1">
+            <div class="dna-orbit">
+              <div class="dna-backdrop"></div>
+              <div class="helix">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="data-node node-1"></div>
+              <div class="data-node node-2"></div>
+              <div class="data-node node-3"></div>
+              <div class="data-node node-4"></div>
+            </div>
+            <div class="hero-floating-panel glass">
+              <p class="label">Live Bioreactor Telemetry</p>
+              <div class="tiny-chart">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="key-values">
+                <div>
+                  <span class="kv-label">Cell Viability</span>
+                  <span class="kv-value">97.3%</span>
+                </div>
+                <div>
+                  <span class="kv-label">Glucose Uptake</span>
+                  <span class="kv-value">↑ 12.4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 2: PLATFORM LAYERS ================= -->
+      <section class="section" id="platform">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">Platform Architecture</p>
+            <h2>Seven synchronized layers for end‑to‑end biotechnology workflows.</h2>
+            <p>
+              Each layer is independently scalable yet deeply integrated, giving you
+              surgical control over every aspect—from wet lab automation to
+              population‑scale simulations.
+            </p>
+          </header>
+
+          <div class="layers-grid">
+            <article class="layer-card tilt reveal-fade">
+              <h3>01 · Instrument Mesh</h3>
+              <p>
+                Connect microscopes, sequencers, flow cytometers, and custom rigs with
+                low‑latency adapters and self‑healing device meshes.
+              </p>
+              <ul>
+                <li>Real‑time protocol syncing</li>
+                <li>Digital twin of every instrument</li>
+                <li>Audit‑ready experiment logs</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade delay-1">
+              <h3>02 · BioSample Ledger</h3>
+              <p>
+                Trace every sample from consent to cryostorage with immutable lineage
+                graphs and chain‑of‑custody checkpoints.
+              </p>
+              <ul>
+                <li>Regulatory‑grade provenance</li>
+                <li>Consent & privacy safeguards</li>
+                <li>Harmonized metadata schemas</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade delay-2">
+              <h3>03 · Omics Fusion Engine</h3>
+              <p>
+                Fuse genomics, transcriptomics, proteomics, and metabolomics into a
+                unified, queryable biological state space.
+              </p>
+              <ul>
+                <li>Petabyte‑scale storage fabric</li>
+                <li>Vectorized biomarker search</li>
+                <li>Interactive cohort exploration</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade">
+              <h3>04 · Simulation Cluster</h3>
+              <p>
+                Run multi‑scale simulations, from protein folding to tissue dynamics, on
+                GPU‑accelerated clusters with smart job routing.
+              </p>
+              <ul>
+                <li>Hybrid deterministic/stochastic models</li>
+                <li>Reusable simulation templates</li>
+                <li>On‑demand cost projections</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade delay-1">
+              <h3>05 · AI Discovery Studio</h3>
+              <p>
+                Architect de‑novo molecules, gene circuits, and dosing strategies with
+                explainable AI models fully traceable to raw data.
+              </p>
+              <ul>
+                <li>Zero‑shot target predictions</li>
+                <li>Explainable risk profiles</li>
+                <li>Interactive design‑build loops</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade delay-2">
+              <h3>06 · Clinical Translation Hub</h3>
+              <p>
+                Translate pre‑clinical insights into adaptive trials with safety
+                guardrails, patient stratification, and real‑world evidence feedback.
+              </p>
+              <ul>
+                <li>In‑flight protocol tuning</li>
+                <li>Regulatory export bundles</li>
+                <li>Privacy‑preserving analytics</li>
+              </ul>
+            </article>
+            <article class="layer-card tilt reveal-fade delay-3">
+              <h3>07 · Governance & Trust Fabric</h3>
+              <p>
+                Encode ethics, compliance, and biosafety directly into your pipelines
+                with policy‑aware execution and runtime checks.
+              </p>
+              <ul>
+                <li>Dynamic risk scoring</li>
+                <li>Granular access policies</li>
+                <li>Full experiment replay</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3: SERVICES STRIP ================= -->
+      <section class="section section-alt" id="services">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">BioTechnology Services</p>
+            <h2>Specialized teams for every phase of your biotechnology program.</h2>
+          </header>
+
+          <div class="services-strip">
+            <article class="service-card reveal-slide">
+              <h3>Bioinformatics-as-a-Service</h3>
+              <p>
+                Dedicated pipelines for variant calling, expression analysis, and single‑cell
+                clustering tuned to your datasets.
+              </p>
+            </article>
+            <article class="service-card reveal-slide delay-1">
+              <h3>Lab Automation Engineering</h3>
+              <p>
+                Convert manual bench protocols into robotic workflows with digital
+                validation and continuous calibration.
+              </p>
+            </article>
+            <article class="service-card reveal-slide delay-2">
+              <h3>Computational Biology R&D</h3>
+              <p>
+                Co‑design mechanistic and data‑driven models that capture the biology
+                you care about most.
+              </p>
+            </article>
+            <article class="service-card reveal-slide delay-3">
+              <h3>Regulatory & Quality Systems</h3>
+              <p>
+                Implement GxP‑aligned control, traceability, and reporting to move from
+                lab concept to clinical reality.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 4: INTERACTIVE PIPELINE ================= -->
+      <section class="section" id="pipeline">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">Dynamic BioPipeline</p>
+            <h2>Design, simulate, and deploy automated biotechnology pipelines.</h2>
+          </header>
+
+          <div class="pipeline-grid">
+            <div class="pipeline-stages">
+              <button class="stage-pill active" data-stage="design">
+                Sample Design
+              </button>
+              <button class="stage-pill" data-stage="ingest">High‑Throughput Ingest</button>
+              <button class="stage-pill" data-stage="analyze">Multi‑Omics Analysis</button>
+              <button class="stage-pill" data-stage="simulate">In‑silico Simulation</button>
+              <button class="stage-pill" data-stage="deploy">Clinical Deployment</button>
+            </div>
+
+            <div class="pipeline-panel glass">
+              <div class="pipeline-state" data-stage-panel="design">
+                <h3>Design: Encode your biology into software.</h3>
+                <p>
+                  Drag‑and‑drop protocol blocks, define biosafety constraints, and
+                  simulate edge cases before touching a single pipette.
+                </p>
+                <ul>
+                  <li>Protocol versioning with rollback</li>
+                  <li>Automated reagent compatibility checks</li>
+                  <li>Instant synthetic data generation</li>
+                </ul>
+              </div>
+              <div class="pipeline-state hidden" data-stage-panel="ingest">
+                <h3>Ingest: Capture every signal from your lab.</h3>
+                <p>
+                  Stream instrument outputs, QC metrics, and annotations into a single,
+                  time‑aligned event log.
+                </p>
+                <ul>
+                  <li>On‑device anomaly detection</li>
+                  <li>Self‑healing data collectors</li>
+                  <li>Edge‑to‑cloud encryption</li>
+                </ul>
+              </div>
+              <div class="pipeline-state hidden" data-stage-panel="analyze">
+                <h3>Analyze: Let the data tell the story.</h3>
+                <p>
+                  Use pre‑built analytic blueprints or construct custom workflows to
+                  discover biomarkers, responders, and unexpected biology.
+                </p>
+                <ul>
+                  <li>Interactive dimensionality reduction</li>
+                  <li>Automated cohort stratification</li>
+                  <li>Explainable feature importance</li>
+                </ul>
+              </div>
+              <div class="pipeline-state hidden" data-stage-panel="simulate">
+                <h3>Simulate: Explore hypothetical worlds.</h3>
+                <p>
+                  Iterate dosing regimens, genetic perturbations, and environmental
+                  conditions in silico before committing to wet lab cycles.
+                </p>
+                <ul>
+                  <li>Scenario libraries with shared baselines</li>
+                  <li>Hybrid mechanistic/ML models</li>
+                  <li>Risk‑aware optimization loops</li>
+                </ul>
+              </div>
+              <div class="pipeline-state hidden" data-stage-panel="deploy">
+                <h3>Deploy: Bring insights to the bedside.</h3>
+                <p>
+                  Package validated models and protocols into clinical workflows with
+                  monitoring and rollback safety nets.
+                </p>
+                <ul>
+                  <li>Compliant deployment pipelines</li>
+                  <li>Real‑world evidence feedback</li>
+                  <li>Continuous performance calibration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 5: IMPACT METRICS ================= -->
+      <section class="section section-alt" id="impact">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">Impact</p>
+            <h2>Measurable outcomes across biotech disciplines.</h2>
+          </header>
+
+          <div class="impact-grid">
+            <article class="impact-card reveal-up">
+              <h3>Cell & Gene Therapy</h3>
+              <p>
+                Shorten vector design and release testing with automated analytics that
+                de‑risk every batch.
+              </p>
+              <div class="impact-metric">
+                <span class="metric-value" data-count="43">0</span>
+                <span class="metric-label">Days removed from release cycles</span>
+              </div>
+            </article>
+            <article class="impact-card reveal-up delay-1">
+              <h3>Microbiology & Bioprocess</h3>
+              <p>
+                Optimize fermenters and bioreactors with AI‑guided control that learns
+                from every run.
+              </p>
+              <div class="impact-metric">
+                <span class="metric-value" data-count="27">0</span>
+                <span class="metric-label">Increase in yield per liter</span>
+              </div>
+            </article>
+            <article class="impact-card reveal-up delay-2">
+              <h3>Precision Diagnostics</h3>
+              <p>
+                Validate multi‑omic signatures on diverse cohorts with rigorous QC and
+                interpretability.
+              </p>
+              <div class="impact-metric">
+                <span class="metric-value" data-count="89">0</span>
+                <span class="metric-label">Specificity across validated panels</span>
+              </div>
+            </article>
+            <article class="impact-card reveal-up delay-3">
+              <h3>Industrial Biotechnology</h3>
+              <p>
+                Bring new enzymes, materials, and pathways online faster with
+                collaboration between strain engineers and modelers.
+              </p>
+              <div class="impact-metric">
+                <span class="metric-value" data-count="35">0</span>
+                <span class="metric-label">Reduction in process energy use</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 6: LAB EXPERIENCES ================= -->
+      <section class="section" id="labs">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">Immersive BioTechnology Labs</p>
+            <h2>
+              Spin up digital replicas of your wet labs and explore scenarios safely.
+            </h2>
+          </header>
+
+          <div class="labs-grid">
+            <article class="lab-card tilt reveal-fade">
+              <span class="pill">Genomics Lab</span>
+              <h3>Whole‑Genome Sequencing Fabric</h3>
+              <p>
+                From sample accessioning to variant interpretation, coordinate every
+                handoff in a single virtual environment.
+              </p>
+              <a href="404.html" class="link-arrow">View genomics blueprint</a>
+            </article>
+            <article class="lab-card tilt reveal-fade delay-1">
+              <span class="pill">Synthetic Biology</span>
+              <h3>Programmable Cell Factory</h3>
+              <p>
+                Design gene circuits, track constructs, and monitor chassis performance
+                with adaptive strain optimization.
+              </p>
+              <a href="404.html" class="link-arrow">Explore synbio workflows</a>
+            </article>
+            <article class="lab-card tilt reveal-fade delay-2">
+              <span class="pill">Clinical</span>
+              <h3>Adaptive Trial Command Center</h3>
+              <p>
+                Coordinate sites, monitor safety, and adjust inclusion rules in real
+                time while preserving statistical power.
+              </p>
+              <a href="404.html" class="link-arrow">See clinical playbook</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 7: INSIGHTS / BLOG PREVIEW ================= -->
+      <section class="section section-alt" id="insights">
+        <div class="container">
+          <header class="section-header reveal-up">
+            <p class="eyebrow">BioTechnology Insights</p>
+            <h2>Stay ahead of the curve with deep technical perspectives.</h2>
+          </header>
+
+          <div class="insights-grid">
+            <article class="insight-card reveal-slide">
+              <span class="pill">Whitepaper</span>
+              <h3>Designing AI Pipelines for Regulated BioTech</h3>
+              <p>
+                A practical guide to building ML models that can withstand regulatory
+                scrutiny without slowing innovation.
+              </p>
+              <button class="text-link to-404">Download whitepaper</button>
+            </article>
+            <article class="insight-card reveal-slide delay-1">
+              <span class="pill">Case Study</span>
+              <h3>How a Microbiology Lab Tripled Throughput</h3>
+              <p>
+                See how protocol refactoring and automated QC unlocked new capacity
+                without new instruments.
+              </p>
+              <button class="text-link to-404">Read case study</button>
+            </article>
+            <article class="insight-card reveal-slide delay-2">
+              <span class="pill">Deep Dive</span>
+              <h3>Multi‑Omics at Industrial Scale</h3>
+              <p>
+                Architecting storage, governance, and analytics for cross‑functional
+                R&D teams.
+              </p>
+              <button class="text-link to-404">Explore deep dive</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 8: CALL TO ACTION ================= -->
+      <section class="section section-cta" id="cta">
+        <div class="container cta-inner reveal-up">
+          <div class="cta-copy">
+            <p class="eyebrow">Begin in simulation. Deploy in reality.</p>
+            <h2>Bring your biotechnology vision online in weeks, not years.</h2>
+            <p>
+              Connect with our architects to map your wet lab, data assets, and
+              regulatory constraints into a single cohesive blueprint.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="404.html" class="btn primary-btn">Schedule a discovery workshop</a>
+            <button class="btn ghost-btn to-404">Download capabilities deck</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-header">
+            <div class="footer-logo">
+              <div class="logo-orbit">
+                <span class="logo-core"></span>
+                <span class="logo-ring ring-1"></span>
+                <span class="logo-ring ring-2"></span>
+              </div>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">Stackly Biotechnology</span>
+              <span class="brand-tagline">Trusted orchestration for living systems</span>
+            </div>
+          </div>
+          <p>
+            Stackly Biotechnology provides a unified digital backbone for laboratories,
+            biotech companies, and clinical programs to move from experiment to impact
+            with confidence.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="404.html">About Us</a></li>
+            <li><a href="404.html">Services</a></li>
+            <li><a href="404.html">Blog</a></li>
+            <li><a href="404.html">Contact</a></li>
+            <li><a href="404.html">Dashboard</a></li>
+            <li><a href="404.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p class="footer-contact-line">
+            <strong>Email:</strong> hello@btnexus.bio
+          </p>
+          <p class="footer-contact-line">
+            <strong>Phone:</strong> +1 (555) 012‑3400
+          </p>
+          <p class="footer-contact-line">
+            <strong>Address:</strong> 400 Quantum Helix Way, BioCity
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-row">
+            <a href="404.html" class="social-icon" aria-label="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <rect x="6.4" y="9.4" width="2.4" height="7.4" fill="currentColor" />
+                <circle cx="7.6" cy="7" r="1.2" fill="currentColor" />
+                <path d="M12 9.6h2.2v1.1c.35-.7 1.02-1.3 2.13-1.3 1.56 0 2.67 1.03 2.67 3.11v4.34h-2.4v-3.83c0-1-.44-1.61-1.27-1.61-.77 0-1.23.52-1.23 1.61v3.83H12z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M9 8l6 8M15 8l-6 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4.2" y="4.2" width="15.6" height="15.6" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="12" cy="12" r="3.3" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="16.5" cy="7.6" r="0.9" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="404.html" class="social-icon" aria-label="YouTube">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="6.2" width="16" height="11.6" rx="3" ry="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M11 10l3.6 2-3.6 2z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Stackly Biotechnology. All rights reserved.</span>
+        <span>Where biotechnology, cloud, and ethics converge.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
