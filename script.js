@@ -184,11 +184,24 @@ function setYear() {
         <div class="spinner"></div>
         <p class="loader-text">Loading...</p>
       </div>`;
+    // start hidden by default so pages restored from bfcache aren't stuck showing the overlay
+    loader.classList.add('hidden');
     document.body.prepend(loader);
   }
 
   const showLoader = () => loader.classList.remove('hidden');
   const hideLoader = () => loader.classList.add('hidden');
+
+  // Ensure loader is hidden when the page is shown (covers bfcache/back/forward restores)
+  window.addEventListener('pageshow', (ev) => {
+    // ev.persisted is true when the page is restored from bfcache
+    hideLoader();
+  });
+
+  // Show a loader when navigating away (gives user feedback when leaving the page)
+  window.addEventListener('beforeunload', () => {
+    showLoader();
+  });
 
   // Keep loader visible on initial load, then fade out after minimum delay
   const minDelayMs = 600;
